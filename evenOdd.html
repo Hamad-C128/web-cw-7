@@ -8,18 +8,34 @@
   </head>
   <body>
     <!-- السؤال الأول -->
+    <input style="margin-top: 100px; margin-left: -90px;"  type="text" id="put">
     <h2 id="numberType"></h2>
+    <button id="btn" style="margin-right: 100px; margin-top: 100px;">click me</button>
+
     <script>
       // 👇🏻 number قم بتعيين قيمة عشوائية إلى المتغير
+      
+       
 
       // 👇🏻 if else باستخدام number قم باختبار قيمة العدد
       // () استخدم الشرط المناسب بين القوسين
-      if (condition) {
-        document.getElementById("numberType").innerHTML =
-          number + " هو عدد زوجي";
-      } else if (condition) {
+     btn.addEventListener('click',function(){
+      const btn = document.querySelector("btn")
+       const h1 = document.getElementById("numberType");
+       let number = 2;
+let input12 = document.getElementById('put');
+let input = input12.value;
+
+ 
+    if (input % 2 === 0) {
+     h1.innerHTML = " هو عدد زوجي";
+      } else{
         // هل تستطيع إكمال الكود المطلوب هنا؟
+       h1.innerHTML = " هو عدد فردي";
       }
+
+
+})
     </script>
   </body>
 </html>
